@@ -11,7 +11,7 @@ import Foundation
 // MARK: - ViewLogAnimationController
 class ViewLogAnimationController: NSObject {
 
-    private let isPresenting: Bool
+    let isPresenting: Bool
 
     init(isPresenting: Bool) {
         self.isPresenting = isPresenting
