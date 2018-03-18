@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewLogViewController" customModule="Logger" customModuleProvider="target">
+            <connections>
+                <outlet property="buildLabel" destination="bXJ-E2-s3V" id="YW5-gO-woO"/>
+                <outlet property="doneButton" destination="FyC-tH-DVw" id="jNR-7U-C7B"/>
+                <outlet property="logTextView" destination="u92-g3-Wb3" id="LSc-h0-GLW"/>
+                <outlet property="shareButton" destination="D4j-ka-rU2" id="aqC-Mm-QYm"/>
+                <outlet property="topConstraint" destination="xHc-8R-2al" id="nSt-zV-yAo"/>
+                <outlet property="versionLabel" destination="359-H9-G5i" id="OeA-iu-V7u"/>
+                <outlet property="view" destination="iN0-l3-epB" id="PvZ-jE-sGt"/>
+                <outlet property="visibleView" destination="dGb-ca-MEx" id="E9y-Kr-sPA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HzW-LN-DEW">
+                    <rect key="frame" x="0.0" y="667" width="375" height="0.0"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="650" id="7jb-at-dHd"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dGb-ca-MEx">
+                    <rect key="frame" x="0.0" y="40" width="375" height="627"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0Ih-KK-QRs">
+                            <rect key="frame" x="10" y="20" width="355" height="597"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="359-H9-G5i">
+                                    <rect key="frame" x="0.0" y="0.0" width="355" height="20"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXJ-E2-s3V">
+                                    <rect key="frame" x="0.0" y="30" width="355" height="0.0"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hug-PT-nLG">
+                                    <rect key="frame" x="0.0" y="40" width="355" height="1"/>
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="Oda-af-C61"/>
+                                    </constraints>
+                                </view>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u92-g3-Wb3">
+                                    <rect key="frame" x="0.0" y="51" width="355" height="426"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                </textView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FyC-tH-DVw">
+                                    <rect key="frame" x="0.0" y="487" width="355" height="50"/>
+                                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="IJs-5i-udk"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                    <state key="normal" title="Dismiss">
+                                        <color key="titleColor" red="0.4772115493127515" green="0.83976775291828787" blue="0.35116743263841382" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="doneButtonTapped" destination="-1" eventType="touchUpInside" id="3jK-WY-Fjs"/>
+                                    </connections>
+                                </button>
+                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mCd-yQ-UGa">
+                                    <rect key="frame" x="0.0" y="547" width="355" height="50"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D4j-ka-rU2">
+                                            <rect key="frame" x="0.0" y="0.0" width="177.5" height="50"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <state key="normal" title="Share">
+                                                <color key="titleColor" red="0.23879639402868952" green="0.23319573640264088" blue="0.25179353112840464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="shareButtonTapped" destination="-1" eventType="touchUpInside" id="Ri8-3b-zRv"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0se-P3-Q0b">
+                                            <rect key="frame" x="177.5" y="0.0" width="177.5" height="50"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <state key="normal" title="Clear">
+                                                <color key="titleColor" red="0.89697835603112841" green="0.3001713931145093" blue="0.30432846130456709" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="clearButtonTapped" destination="-1" eventType="touchUpInside" id="INw-Gg-FJf"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="0se-P3-Q0b" firstAttribute="width" secondItem="D4j-ka-rU2" secondAttribute="width" id="f19-vI-nve"/>
+                                        <constraint firstAttribute="height" constant="50" id="shJ-zA-DMt"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="0Ih-KK-QRs" secondAttribute="trailing" constant="10" id="2jY-bi-282"/>
+                        <constraint firstItem="0Ih-KK-QRs" firstAttribute="leading" secondItem="dGb-ca-MEx" secondAttribute="leading" constant="10" id="Fd8-dz-jbr"/>
+                        <constraint firstItem="0Ih-KK-QRs" firstAttribute="top" secondItem="dGb-ca-MEx" secondAttribute="top" constant="20" id="Wwk-Ao-I0F"/>
+                        <constraint firstAttribute="bottom" secondItem="0Ih-KK-QRs" secondAttribute="bottom" constant="10" id="esM-KY-NTh"/>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="650" id="gqu-nE-afS"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="dGb-ca-MEx" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" priority="999" id="0L2-eE-d4U"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="dGb-ca-MEx" secondAttribute="bottom" id="CS7-gG-lXd"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="dGb-ca-MEx" secondAttribute="trailing" priority="999" id="NsH-G7-h8Y"/>
+                <constraint firstItem="HzW-LN-DEW" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" priority="999" id="bjd-Nk-X7M"/>
+                <constraint firstItem="HzW-LN-DEW" firstAttribute="top" secondItem="dGb-ca-MEx" secondAttribute="bottom" id="ejf-rP-ThF"/>
+                <constraint firstItem="dGb-ca-MEx" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="fAl-Lh-fss"/>
+                <constraint firstAttribute="bottom" secondItem="HzW-LN-DEW" secondAttribute="bottom" id="pEf-CS-B9N"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="HzW-LN-DEW" secondAttribute="trailing" priority="999" id="vGV-xr-0gg"/>
+                <constraint firstItem="dGb-ca-MEx" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="xHc-8R-2al"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="33.5" y="113"/>
+        </view>
+    </objects>
+</document>
